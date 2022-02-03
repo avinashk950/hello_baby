@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Protfoilos</h1>
+
+<div id="protfoilos">
+  <% @protfoilos.each do |protfoilo| %>
+    <%= render protfoilo %>
+    <p>
+      <%= link_to "Show this protfoilo", protfoilo %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New protfoilo", new_protfoilo_path %>

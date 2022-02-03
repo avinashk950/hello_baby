@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @protfoilo %>
+
+<div>
+  <%= link_to "Edit this protfoilo", edit_protfoilo_path(@protfoilo) %> |
+  <%= link_to "Back to protfoilos", protfoilos_path %>
+
+  <%= button_to "Destroy this protfoilo", @protfoilo, method: :delete %>
+</div>
